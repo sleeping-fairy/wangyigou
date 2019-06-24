@@ -1,0 +1,128 @@
+.mui-bar-nav.nlw-header {
+  background-color: #006699;
+}
+.nlw-header h1 {
+  color: #fff;
+}
+.nlw-header a{
+  color: #fff;
+}
+
+.mui-content {
+  background: #fff;
+}
+.nlw-daohang-a {
+  padding: 5px;
+}
+.nlw-daohang-a .nlw-daohang {
+  display: block;
+  float: left;
+  width: 33.3333%;
+}
+.nlw-daohang-a .nlw-daohang img{
+  display: block;
+  width: 100%;
+}
+
+.brand {
+  padding: 0 5px;
+}
+.brand img {
+  width: 100%;
+}
+.brand ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+
+}
+.brand ul li {
+  float: left;
+  list-style:none;
+  width: 25%;
+}
+
+.product {
+  padding: 0 10px;
+}
+
+.product .title {
+  width: 100%;
+}
+
+.product ul {
+  margin: 0;
+  padding: 6px 0;
+}
+
+.product ul li {
+  width: 50%;
+  float: left;
+  padding: 5px;
+  list-style: none;
+}
+
+.product ul li a {
+  display: block;
+  box-shadow: 0 0 5px #ccc;
+  padding: 5px;
+}
+
+.product ul li img {
+  width: 100%;
+}
+
+.product ul li .name{
+  display: block;
+  color: #8f8f94;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  height: 44px;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.product ul li p {
+  text-align: center;
+  /* padding-top:6px; */
+}
+
+.product ul li p span:first-child {
+  color: #f20;
+  padding-right: 2px;
+}
+
+.product ul li p span:last-child {
+  text-decoration: line-through;
+  padding-left: 2px;
+}
+
+.product ul li .buy-now {
+  display: block;
+  width: 80px;
+  height: 30px;
+  /* line-height: 30px; */
+  text-align: center;
+  background: #006699;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 0 auto 5px auto;
+  margin-bottom: 10px;
+  border: none;
+}
+.product ul li a p {
+  font-size: 12px;
+}
+
+
+.footer {
+  background-color: #006699;
+}
+.footer .mui-tab-item {
+  color: #FFF;
+}
+.footer .mui-tab-item.mui-active {
+  color: darkorange;
+}
