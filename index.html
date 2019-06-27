@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/mui/css/mui.min.css">
-  <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/base.css">
-  <script src="assets/mui/js/mui.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<script src="assets/mui/js/mui.min.js"></script>
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="js/public.js"></script>
 </head>
 <body>
-  <header class="mui-bar mui-bar-nav mui-clearfix nlw-header">
-    <h1 class="mui-title">网易购</h1>
-    <a href="" class="mui-icon mui-icon-search mui-pull-right"></a>
+	<header class="mui-bar mui-bar-nav my-header">
+		<h1 class="mui-title">网易购</h1>
+		<a href="search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
 	</header>
-	<nav class="mui-bar mui-bar-tab footer">
+	<nav class="mui-bar mui-bar-tab my-footer">
 		<a class="mui-tab-item mui-active" href="index.html">
 			<span class="mui-icon mui-icon-home"></span>
 			<span class="mui-tab-label">首页</span>
@@ -25,7 +25,7 @@
 			<span class="mui-tab-label">分类</span>
 		</a>
 		<a class="mui-tab-item" href="cart.html">
-			<span class="mui-icon fa fa-shopping-cart"></span>
+			<span class="mui-icon iconfont icon-daohanggouwuche"></span>
 			<span class="mui-tab-label">购物车</span>
 		</a>
 		<a class="mui-tab-item" href="user.html">
@@ -34,21 +34,42 @@
 		</a>
 	</nav>
 	<div class="mui-content">
-    <!-- 轮播图 -->
-    <div class="mui-slider">
-      <div class="mui-slider-group mui-slider-loop">
-        <!-- 支持循环，需要重复图片节点 -->
-        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="/nlw/images/banner6.png" /></a></div>
-        <div class="mui-slider-item"><a href="#"><img src="/nlw/images/banner1.png" /></a></div>
-        <div class="mui-slider-item"><a href="#"><img src="/nlw/images/banner2.png" /></a></div>
-        <div class="mui-slider-item"><a href="#"><img src="/nlw/images/banner3.png" /></a></div>
-        <div class="mui-slider-item"><a href="#"><img src="/nlw/images/banner4.png" /></a></div>
-        <div class="mui-slider-item"><a href="#"><img src="/nlw/images/banner5.png" /></a></div>
-        <div class="mui-slider-item"><a href="#"><img src="/nlw/images/banner6.png" /></a></div>
-        <!-- 支持循环，需要重复图片节点 -->
-        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="/nlw/images/banner1.png" /></a></div>
-      </div>
-      <div class="mui-slider-indicator">
+
+		<!-- 轮播图 -->
+		<div class="mui-slider">
+			<div class="mui-slider-group">
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/banner1.png" />
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/banner2.png" />
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/banner3.png" />
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/banner4.png" />
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/banner5.png" />
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/banner6.png" />
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
 				<div class="mui-indicator mui-active"></div>
 				<div class="mui-indicator"></div>
 				<div class="mui-indicator"></div>
@@ -56,47 +77,49 @@
 				<div class="mui-indicator"></div>
 				<div class="mui-indicator"></div>
 			</div>
-    </div>
-    <!-- /轮播图 -->
-    <!-- 导航条 -->
-    <div class="mui-clearfix nlw-daohang-a">
-      <a href="#" class="nlw-daohang">
-        <img src="images/nav1.png">
-      </a>
-      <a href="#" class="nlw-daohang">
-        <img src="images/nav2.png">
-      </a>
-      <a href="#" class="nlw-daohang">
-        <img src="images/nav3.png">
-      </a>
-      <a href="#" class="nlw-daohang">
-        <img src="images/nav4.png">
-      </a>
-      <a href="#" class="nlw-daohang">
-        <img src="images/nav5.png">
-      </a>
-      <a href="#" class="nlw-daohang">
-        <img src="images/nav6.png">
-      </a>
-    </div>
-    <!-- /导航条 -->
-    <!-- 品牌专区 -->
-    <div class="brand mui-clearfix">
-      <img src="images/title0.png" >
-      <ul>
-        <li><a href="#"><img src="images/brand1.png" alt=""></a></li>
-        <li><a href="#"><img src="images/brand2.png" alt=""></a></li>
-        <li><a href="#"><img src="images/brand3.png" alt=""></a></li>
-        <li><a href="#"><img src="images/brand4.png" alt=""></a></li>
-        <li><a href="#"><img src="images/brand5.png" alt=""></a></li>
-        <li><a href="#"><img src="images/brand6.png" alt=""></a></li>
-        <li><a href="#"><img src="images/brand7.png" alt=""></a></li>
-        <li><a href="#"><img src="images/brand8.png" alt=""></a></li>
-      </ul>
-    </div>
-    <!-- /品牌专区 -->
-	
-	<!-- 运动生活专区 -->
+		</div>
+		<!-- /轮播图 -->
+
+		<!-- 导航链接 -->
+		<div class="nav-links mui-clearfix">
+			<a href="#">
+				<img src="images/nav1.png">
+			</a>
+			<a href="#">
+				<img src="images/nav2.png">
+			</a>
+			<a href="#">
+				<img src="images/nav3.png">
+			</a>
+			<a href="#">
+				<img src="images/nav4.png">
+			</a>
+			<a href="#">
+				<img src="images/nav5.png">
+			</a>
+			<a href="#">
+				<img src="images/nav6.png">
+			</a>
+		</div>
+		<!-- /导航链接 -->
+
+		<!-- 品牌专区 -->
+		<div class="brand">
+			<img src="images/title0.png" class="title">
+			<ul>
+				<li><a href=""><img src="images/brand1.png" alt=""></a></li>
+				<li><a href=""><img src="images/brand2.png" alt=""></a></li>
+				<li><a href=""><img src="images/brand3.png" alt=""></a></li>
+				<li><a href=""><img src="images/brand4.png" alt=""></a></li>
+				<li><a href=""><img src="images/brand5.png" alt=""></a></li>
+				<li><a href=""><img src="images/brand6.png" alt=""></a></li>
+				<li><a href=""><img src="images/brand7.png" alt=""></a></li>
+				<li><a href=""><img src="images/brand8.png" alt=""></a></li>
+			</ul>
+		</div>
+		<!-- /品牌专区 -->
+
+		<!-- 运动生活专区 -->
 		<div class="product">
 			<img src="images/title1.png" class="title">
 			<ul class="mui-clearfix">
@@ -110,7 +133,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 				<li>
@@ -123,7 +146,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 				<li>
@@ -136,7 +159,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 				<li>
@@ -149,7 +172,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 			</ul>
@@ -170,7 +193,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 				<li>
@@ -183,7 +206,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 				<li>
@@ -196,7 +219,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 				<li>
@@ -209,7 +232,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 			</ul>
@@ -230,7 +253,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 				<li>
@@ -243,7 +266,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 				<li>
@@ -256,7 +279,7 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 				<li>
@@ -269,18 +292,18 @@
 							<span>¥560</span>
 							<span>¥888</span>
 						</p>
-						<button class="buy-now">立即购买</button>
+						<span class="buy-now">立即购买</span>
 					</a>
 				</li>
 			</ul>
 		</div>
 		<!-- /男士专栏 -->
-  </div>
-  <script>
-			var gallery = mui('.mui-slider');
-			gallery.slider({
-			  interval:2000//自动轮播周期，若为0则不自动播放，默认为0；
-			});
-		</script>
+	</div>
+	<script>
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+			interval:2000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	</script>
 </body>
 </html>
